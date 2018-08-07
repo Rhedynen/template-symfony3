@@ -1,6 +1,6 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: parameters_patformsh.php }
+    - { resource: parameters_platformsh.php }
     - { resource: security.yml }
     - { resource: services.yml }
 
@@ -67,3 +67,7 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+sensio_framework_extra:
+   router:
+        annotations: false
